@@ -1,0 +1,17 @@
+
+Debugging Work step-by-step log:
+
+1. make .env file with PORT, MONGODB_URI, SESSION_SECRET
+2. copy from local copies /public/images dir to this repo
+3. npm install
+4. start the server with npm run dev
+5. errored out because it seems that bcryptjs wasn't installed in package.json, doing it now and testing again - Works
+6. errored out due to async wasn't install in package.json, doing it now and testing again - works
+7. errored out, MongoStore is not defined in app.js, fixed
+8. route / is hanging for some reason, suspecting index.js in routes. used return pagination() in if statement of req.user
+then used return res.render('main/home') after. Noticed that 'views' folder is misspelled as 'viewes' corrected that. Next
+step is to go throughly through all folder and files to review each of them mentally noting everything out of the ordinary,
+and need to test now the / route.
+9. went through all files reviewed, each code line, noticed some irregularities, and one mistake that I will correct now in
+passport.js line 49 when calling callback there is a typo 'verifiedCallback' instead of 'verifyCallback'. now to test the register
+and login functionality, having a hunch that it should work.

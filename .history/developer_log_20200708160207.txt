@@ -1,0 +1,7 @@
+
+Debugging Work step-by-step log:
+
+1. make .env file with PORT, MONGODB_URI, SESSION_SECRET
+PORT = 8702
+MONGODB_URI = 'mongodb://localhost/shop2-class'
+SESSION_SECRET = 'no you cannot have my cookies'

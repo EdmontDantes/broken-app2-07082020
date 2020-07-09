@@ -1,0 +1,8 @@
+
+Debugging Work step-by-step log:
+
+1. make .env file with PORT, MONGODB_URI, SESSION_SECRET
+2. copy from local copies /public/images dir to this repo
+3. npm install
+4. start the server with npm run dev
+5. errored out because it seems that bcryptjs wasn't installed in package.json, doing it now and testing again
